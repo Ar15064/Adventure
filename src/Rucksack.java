@@ -29,12 +29,11 @@ public class Rucksack {
         }
 
 
-        System.out.println("DsPhSBQQQhqmBDhPDsFwjwsLjlRjlttvjvvtRb".charAt(22));
-//        while (!path.isEmpty()) {
+        while (!path.isEmpty()) {
             System.out.println("In the loop");
             String why = scr.nextLine(); // divided it in two
             // why.charAt(why.length/2 - 1) // will give you half of the rucksack
-            for (int i = 0; i < why.length(); i++) {
+            for (int i = 0; i < why.length()/ 2 -1; i++) {
                 // take the first character then find if it is the same in the seconds part of the rucksack
                 for (int j = why.length() / 2 - 1; j < why.length() - 1; j++) {
                     System.out.println(j);
@@ -49,7 +48,7 @@ public class Rucksack {
                 }
             }
 //
-//        }
+        }
 
         System.out.println("letter size " + letters.size());
         for (int i = 0; i < letters.size(); i++) {
